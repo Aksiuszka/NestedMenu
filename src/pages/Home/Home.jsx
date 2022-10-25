@@ -1,7 +1,8 @@
-import { GridItem, Button} from '@chakra-ui/react';
+import { GridItem, Image, Button } from '@chakra-ui/react';
 import Layout from '../../components/Layout';
 import Hero from '../../components/Hero';
-import StyledImage from '../../components/Image'
+import StyledImage from '../../components/Image';
+import Main from '../../assets/pic1.png';
 function Home() {
   return (
     <Layout>
@@ -14,7 +15,9 @@ function Home() {
         </Hero>
       </GridItem>
       <GridItem w="100%" h="calc(100vh)">
-        <StyledImage/>
+        <StyledImage>
+          <Image src={Main} alt="notebook" />
+        </StyledImage>
       </GridItem>
     </Layout>
   );

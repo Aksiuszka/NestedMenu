@@ -1,7 +1,7 @@
-import { Flex, Box, Image } from '@chakra-ui/react';
-import Main from '../../assets/pic1.png';
+import { Flex, Box } from '@chakra-ui/react';
 
-function StyledImage() {
+
+function StyledImage({children}) {
   return (
     <Flex
       bg="white"
@@ -11,7 +11,7 @@ function StyledImage() {
       direction="column"
       alignItems="center">
       <Box boxSize="sm">
-        <Image src={Main} alt="notebook" />
+        {children}
       </Box>
     </Flex>
   );
